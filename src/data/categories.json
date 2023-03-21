@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "title":"İsitmə sistemləri",
+        "img":"../assets/img-icon/i1.png"
+    },
+    {
+        "id":2,
+        "title":"Soyutma sistemləri",
+        "img":"../assets/img-icon/i2.png"
+    },
+    {
+        "id":1,
+        "title":"Havalandırma sistemləri",
+        "img":"../assets/img-icon/i3.png"
+    },
+    {
+        "id":1,
+        "title":"Elektrik sistemləri",
+        "img":"../assets/img-icon/i4.png"
+    },
+    {
+        "id":1,
+        "title":"İzolyasiya və qablama",
+        "img":"../assets/img-icon/i5.png"
+    },
+    {
+        "id":1,
+        "title":"Yanğından Mühafizə sistemləri",
+        "img":"../assets/img-icon/i6.png"
+    }
+   
+]
