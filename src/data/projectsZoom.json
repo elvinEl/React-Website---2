@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "link": "./assets/projects/p1.jpg",
+      "text": "Elvin"
+    },
+    {
+      "link": "./assets/projects/p2.jpg"
+    },
+    {
+      "link": "./assets/projects/p3.jpg"
+    },
+    {
+      "link": "./assets/projects/p4.jpg"
+    },
+    {
+      "link": "./assets/projects/p5.jpg"
+    },
+    {
+      "link": "./assets/projects/p6.jpg"
+    },
+    {
+      "link": "./assets/projects/p7.jpg"
+    },
+    {
+      "link": "./assets/projects/p8.jpg"
+    },
+    {
+      "link": "./assets/projects/p9.jpg"
+    },
+    {
+      "link": "./assets/projects/p10.jpg"
+    },
+    {
+      "link": "./assets/projects/p11.jpg"
+    },
+    {
+      "link": "./assets/projects/p12.jpg"
+    }
+  ]
+}

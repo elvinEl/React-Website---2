@@ -1,40 +1,43 @@
-import React from 'react'
+import React from "react";
 import {
   createBrowserRouter,
   Route,
-  NavLink,
   createRoutesFromElements,
-  RouterProvider
-} from 'react-router-dom'
+  RouterProvider,
+} from "react-router-dom";
 
 // PAGES
-import Home from './pages/Home'
-import About from './pages/About'
-import Products from './pages/Products'
-import Projects from './pages/Projects'
-import Connect from './pages/Connect'
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Products from "./pages/Products";
+import Projects from "./pages/Projects";
+import Connect from "./pages/Connect";
 
 // LAYOUTS
-import RootLayout from './layouts/RootLayout'
-
+import RootLayout from "./layouts/RootLayout";
+import NewProductsDetails from "./components/products/NewProductsDetails";
+import ProductsLayout from "./layouts/ProductsLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<RootLayout/>}>
+    <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path='about' element={<About />} />
-      <Route path='products' element={<Products />} />
-      <Route path='projects' element={<Projects />} />
-      <Route path='connect' element={<Connect />} />
+      <Route path="about" element={<About />} />
+      <Route path="products" element={<ProductsLayout />}>
+        <Route index element={<Products />} />
+        <Route path=":id" element={<NewProductsDetails />} />
+      </Route>
+      <Route path="projects" element={<Projects />} />
+      <Route path="connect" element={<Connect />} />
     </Route>
   )
-)
+);
 
 function App() {
   return (
     <div>
       <RouterProvider router={router} />
     </div>
-  )
+  );
 }
-export default App
+export default App;

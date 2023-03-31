@@ -11,9 +11,9 @@ function NewProjects() {
 
     return (
         <>
-               <div className='underline flex justify-center items-center'>
-                    <span className='font-bold text-2xl mt-8'>LAHİYƏLƏR</span>
-                </div>
+            <div className='underline flex justify-center items-center'>
+                <span className='font-bold text-2xl mt-8'>LAHİYƏLƏR</span>
+            </div>
             <div className='grid grid-cols-3 gap-8 max-w-[80%] mt-[2rem] mx-auto max-lg:grid-cols-2 max-lg:max-w-[85%] max-md:grid-cols-1 max-md:max-w-[85%]'>
                 {projects.map(project => <NewProjectsItem key={project.id} project={project} />)}
             </div>
