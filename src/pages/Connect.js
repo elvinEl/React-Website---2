@@ -1,5 +1,5 @@
 import React from "react";
-import Myform from "../components/Myform";
+import Myform from '../components/connect/Myform'
 import Helmet from 'react-helmet'
 
 
