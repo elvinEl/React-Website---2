@@ -2,11 +2,17 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
+
 
 function Footer() {
   useState(() => {
     window.scrollTo(0, 0);
   });
+
+const { t, i18n } = useTranslation();
+
 
   return (
     <>
@@ -48,7 +54,11 @@ function Footer() {
 
               <div className="text-end max-md:text-center">
                 <p className="text-[28px] hover:text-[#ffffff7a] duration-1000 max-md:text-[18px]">
-                  <a href="#">Əlaqə Nömrələri</a>
+                  <a href="#">
+                    {
+                      t('Əlaqə Nömrələri')
+                    }
+                    </a>
                 </p>
 
                 <div className="mt-[2rem]" >
@@ -68,7 +78,10 @@ function Footer() {
 
             <div >
               <p className="text-[28px]  hover:text-[#ffffff7a] duration-1000 max-md:flex max-md:justify-center max-md:items-center max-md:text-[18px]">
-                Naviqasiya
+            {
+              t('Naviqasiya')
+            }
+                
               </p>
 
               <div className="grid grid-cols-3 mt-[2rem] max-md:text-[13px] max-md:text-center">
@@ -76,31 +89,44 @@ function Footer() {
                   className="underline hover:no-underline text-[#ffffff7a]  hover:text-white duration-1000"
                   to="/"
                 >
-                  Baş Səhifə
+                  {
+                    t('Əsas_Səhifə')
+                  }
                 </NavLink>
                 <NavLink
                   className="underline hover:no-underline text-[#ffffff7a]  hover:text-white duration-1000"
                   to="/about"
                 >
-                  Şirkət Haqqında
+                  {
+                    t('Haqqımızda')
+                  }
+                  
                 </NavLink>
                 <NavLink
                   className="underline hover:no-underline text-[#ffffff7a]  hover:text-white duration-1000"
                   to="/products"
                 >
-                  Məhsullar
+                  {
+                    t('Məhsullar')
+                  }
+                  
                 </NavLink>
                 <NavLink
                   className="underline hover:no-underline text-[#ffffff7a]  hover:text-white duration-1000"
                   to="/projects"
                 >
-                  Lahiyələr
+                  {
+                    t('Layihələr')
+                  }
                 </NavLink>
                 <NavLink
                   className="underline hover:no-underline text-[#ffffff7a]  hover:text-white duration-1000"
                   to="/connect"
                 >
-                  Bizimlə Əlaqə
+                  {
+                    t('Bizimlə Əlaqə')
+                  }
+                  
                 </NavLink>
               </div>
             </div>

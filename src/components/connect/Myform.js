@@ -2,12 +2,15 @@ import React from "react";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import toast, { Toaster } from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 function Myform() {
   const [to_name, setTo_Name] = useState("");
   const [from_name, setFrom_Name] = useState("");
   const [message, setMessage] = useState("");
   const [number, setNumber] = useState("");
+  const { t, i18n } = useTranslation();
+
 
   const notify = () => toast("Mesajınız göndərildi");
   const errorNotify = () => toast("Mesajınız göndərilmədi !");
@@ -40,7 +43,7 @@ function Myform() {
   };
   return (
     <>
-      <div class="relative z-0 max-md:mb-4">
+      <div class="relative z-0">
         <input
           type="text"
           tabIndex="1"
@@ -56,7 +59,8 @@ function Myform() {
           class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           required
         >
-          Ad , Soyad
+          {t('Ad , Soyad')}
+         
         </label>
       </div>
 
@@ -77,11 +81,12 @@ function Myform() {
           class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           required
         >
-          Telefon nömrəniz
+          {t('Telefon nömrəniz')}
+          
         </label>
       </div>
 
-      <div class="relative z-0 max-lg:mt-4">
+      <div class="relative z-0 ">
         <input
           type="email"
           tabIndex="3"
@@ -97,7 +102,8 @@ function Myform() {
           class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-500 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           required
         >
-          E-mail
+          {t('E-mail')}
+          
         </label>
       </div>
 
@@ -117,7 +123,8 @@ function Myform() {
           class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           required
         >
-          Mesajınız
+          {t('Mesajınız')}
+          
         </label>
 
         <div className="flex justify-end max-lg:justify-center max-md:justify-center mt-4">
@@ -127,7 +134,8 @@ function Myform() {
             onClick={submitInfo}
             className="px-3 py-2 bg-green-500 text-white rounded hover:bg-green-600"
           >
-            Göndər
+            {t('Göndər')}
+            
           </button>
           <div>
             <Toaster position="bottom-right" />

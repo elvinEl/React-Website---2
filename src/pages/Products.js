@@ -2,16 +2,20 @@ import React from "react";
 import Partners from "../components/partners/Partners";
 import NewProducts from "../components/products/NewProducts";
 import Helmet from 'react-helmet'
+import { useTranslation } from "react-i18next";
 
 function Products() {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
     <Helmet>
       <title>Məhsullar</title>
     </Helmet>
-      <div className="max-w-[70%] mt-40 mx-auto bg-[#f7f7f7] border rounded max-lg:max-w-full max-lg:mt-0">
+      <div className="max-w-[70%] mt-40  mx-auto bg-[#f7f7f7] border rounded max-lg:max-w-full max-lg:mt-0">
         <span className="text-[30px] font-bold flex justify-center items-center pt-6 ">
-          Məhsullar
+          {t('Məhsullar')}
+          
         </span>
 
         <div className="max-w-[95%] mx-auto">

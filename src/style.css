@@ -195,3 +195,33 @@ button > .after {
   background-color: rgba(53, 113, 255, 1);
   transition: 500ms;
 }
+
+
+
+/* BreadCrumbs */
+.breadcrums{
+  max-width: 1333px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 0.5rem;
+}  
+  .breadcrums > *{
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrums .crumb:after{
+  content: '>';
+  margin-left: 10px;
+}
+.breadcrums .crumb:last-child::after{
+  display: none;
+}
+.breadcrums .crumb a{
+  color:black;
+}
+.breadcrums .crumb a:hover{
+  text-decoration: underline;
+}
+.select-option{
+  outline: none !important;
+}

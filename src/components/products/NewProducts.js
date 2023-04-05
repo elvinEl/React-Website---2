@@ -2,9 +2,15 @@ import React from "react";
 import { useState, useEffect } from "react";
 import NewProductItem from "./NewProductItem";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import {useTranslation} from 'react-i18next'
+import axios from 'axios'
 
 function NewProducts() {
   const [products, setProducts] = useState([]);
+
+  const location = useLocation();
+
+  const {t,i18n} = useTranslation()
 
   // PAGINATION
   const [noOfElement, setNoOfElement] = useState(4);
@@ -14,13 +20,24 @@ function NewProducts() {
   };
   //
 
-  const location = useLocation();
+
+  // useEffect(() => {
+  //   fetch("http://192.168.0.130:8000/api/products")
+  //     .then((res) => res.json())
+  //     .then((data) => setProducts(data.data));
+  // }, []);
 
   useEffect(() => {
-    fetch("http://192.168.0.130/api/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data.data));
-  }, []);
+    async function fetchProducts() {
+        const language = i18n.language;
+        const response = await axios.get('http://192.168.0.130:8000/api/products', {
+          headers: { 'Accept-Language': language },
+        });
+        setProducts(response.data.data);
+      }
+  
+      fetchProducts();
+  }, [i18n.language]);
 
   return (
     <div className="bg-[#f6f6f6] mt-[5rem]">
@@ -50,7 +67,9 @@ function NewProducts() {
 
           {/* PAGINATION BUTTON */}
           <div className="flex justify-center items-center">
-            <button className="btn btn-info  text-[13px] border-[1px] text-white flex justify-center items-center"  onClick={() => loadMore()}>DAHA ÇOX GÖR</button>
+            <button className="btn btn-info  text-[13px] border-[1px] text-white flex justify-center items-center"  onClick={() => loadMore()}> 
+            {t('DAHA ÇOX GÖR')}
+            </button>
           </div>
             {/* // */}
         </div>

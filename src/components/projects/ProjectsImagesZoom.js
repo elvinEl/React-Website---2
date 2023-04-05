@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import data from '../../data/projectsZoom.json'
 import Modal from "../modal/Modal";
 import '../../styles/Zoom.css'
+import { t } from "i18next";
 
 function ProjectsImagesZoom() {
   const [clickedImg, setClickedImg] = useState(null);
@@ -49,7 +50,12 @@ function ProjectsImagesZoom() {
   return (
     <>
     <div className="underline flex justify-center items-center " >
-        <span className="font-bold text-2xl mt-8">QALAREYA</span>
+        <span className="font-bold text-2xl mt-8">
+         {
+          t(' QALAREYA')
+         }
+         
+          </span>
     </div>
     <div  className="wrapper  grid grid-cols-4 grid-rows-3  gap-8 max-w-[80%] mt-[2rem] mx-auto max-xl:grid-cols-3  max-lg:grid-cols-2 max-lg:max-w-[90%] max-md:grid-cols-1 max-md:max-w-[85%]" >
       

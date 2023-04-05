@@ -1,9 +1,13 @@
 import React from "react";
 import Myform from '../components/connect/Myform'
 import Helmet from 'react-helmet'
+import { useTranslation } from "react-i18next";
+
 
 
 function Connect() {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="Connect">
   <Helmet>
@@ -11,7 +15,8 @@ function Connect() {
   </Helmet>
       <div className="max-w-[70%] mt-40 mx-auto bg-[#f7f7f7] border rounded mb-12 max-md:max-w-full max-md:mt-0" >
         <span className="text-[30px] font-bold flex justify-center items-center pt-6 ">
-          Əlaqə
+          {t('Əlaqə')}
+          
         </span>
         <div className="max-w-[95%] mx-auto">
           <div className="bg-white mt-8 mb-8 py-[16px] border rounded-[20px]"></div>
@@ -20,7 +25,7 @@ function Connect() {
         <div className="grid grid-cols-10 max-w-[95%]  mx-auto mt-16 mb-12 max-lg:block  ">
           <div className="col-span-4 bg-[#4d4c4b] text-white p-8 rounded-l-xl rounded max-h-[380px] max-lg:rounded">
             <div>
-              <span className="font-semibold text-[22px]">Əlaqə nömrələri</span>
+              <span className="font-semibold text-[22px]">{t('Əlaqə Nömrələri')} </span>
               <div className="text-white mt-4">
                 <p>
                   <a href="tel:(+99470)2091646">(+99470)209-16-46</a>
@@ -32,7 +37,7 @@ function Connect() {
             </div>
 
             <div className="mt-4">
-              <span className="font-semibold text-[22px]">E-mail</span>
+              <span className="font-semibold text-[22px]">{t('E-mail')} </span>
               <div className="mt-2">
                 <a href="mailto:raminmemmedzade@climat.az">raminmemmedzade@climat.az</a><br/>
                 <a href="mailto:hr@climat.az">hr@climat.az</a><br/>
@@ -41,7 +46,7 @@ function Connect() {
             </div>
 
             <div className="mt-4" >
-              <span className="font-semibold text-[22px]">Ünvan</span>
+              <span className="font-semibold text-[22px]">{t('Ünvan')} </span>
               <div className="mt-2">
                 <span>507-511 İsmayıl bəy Qutqaşınlı, Bakı</span>
               </div>
@@ -50,7 +55,7 @@ function Connect() {
 
           <div className="col-span-6 bg-white px-7 py-7 rounded-r-xl">
             <div >
-            <span className="font-semibold text-[22px]" >Əlaqə Formu</span>
+            <span className="font-semibold text-[22px]" >{t('Əlaqə Formu')} </span>
 
             </div>
 
