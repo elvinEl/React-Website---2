@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "img":"../assets/partners/t12.jpg"
+        "img":"../assets/partners/t16.jpg"
     },
     {
         "id":2,
@@ -9,7 +9,7 @@
     },
     {
         "id":3,
-        "img":"../assets/partners/t3.jpg"
+        "img":"../assets/partners/t13.jpg"
     },
     {
         "id":4,
@@ -25,7 +25,7 @@
     },
     {
         "id":7,
-        "img":"../assets/partners/t7.jpg"
+        "img":"../assets/partners/t15.jpg"
     },
     {
         "id":8,
@@ -37,10 +37,10 @@
     },
     {
         "id":10,
-        "img":"../assets/partners/t10.jpg"
+        "img":"../assets/partners/t18.jpg"
     },
     {
         "id":11,
-        "img":"../assets/partners/t11.jpg"
+        "img":"../assets/partners/t17.jpg"
     }
 ]

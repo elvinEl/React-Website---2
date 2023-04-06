@@ -53,7 +53,7 @@ function About() {
             <span className="flex justify-center items-center font-bold text-[30px]">
               {t("XİDMƏTLƏR")}{" "}
             </span>
-            <ul className="max-w-[97%] mx-auto">
+            <ul className="max-w-[97%] mx-auto max-md:max-w-[95%]">
               <li className="list-disc">
                 {t(
                   "Havalandırma sistemlərinin layihələndirilməsi, isitmə-soyutma, soyuducu-fan coil və istənilən həcmdə quraşdırma quraşdırma işləri"

@@ -57,7 +57,7 @@ function ProjectsImagesZoom() {
          
           </span>
     </div>
-    <div  className="wrapper  grid grid-cols-4 grid-rows-3  gap-8 max-w-[80%] mt-[2rem] mx-auto max-xl:grid-cols-3  max-lg:grid-cols-2 max-lg:max-w-[90%] max-md:grid-cols-1 max-md:max-w-[85%]" >
+    <div  className="wrapper  grid grid-cols-4 grid-rows-3  gap-4 max-w-[80%] mt-[2rem] mx-auto max-xl:grid-cols-3  max-lg:grid-cols-2 max-lg:max-w-[90%] max-md:grid-cols-1 max-md:max-w-[85%]" >
       
       {data.data.map((item, index) => (
         <div key={index} className="wrapper-images modal-images ">

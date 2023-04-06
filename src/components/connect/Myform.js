@@ -43,7 +43,7 @@ function Myform() {
   };
   return (
     <>
-      <div class="relative z-0">
+      <div class="relative z-0 mb-4">
         <input
           type="text"
           tabIndex="1"
@@ -64,7 +64,7 @@ function Myform() {
         </label>
       </div>
 
-      <div class="relative z-0" >
+      <div class="relative z-0 mb-4" >
         <input
           type="text"
           tabIndex="2"
@@ -86,7 +86,7 @@ function Myform() {
         </label>
       </div>
 
-      <div class="relative z-0 ">
+      <div class="relative z-0 mb-4">
         <input
           type="email"
           tabIndex="3"
@@ -107,7 +107,7 @@ function Myform() {
         </label>
       </div>
 
-      <div class="relative z-0 col-span-3 mt-4">
+      <div class="relative z-0 col-span-3">
         <textarea
           type="email"
           tabIndex="4"

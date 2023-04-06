@@ -19,10 +19,12 @@ code {
   gap: 2em;
 }
 .wrapper-images img {
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
-
+.certifcate-image img{
+  height: 400px !important;
+}
 .wrapper img {
   cursor: pointer;
 }

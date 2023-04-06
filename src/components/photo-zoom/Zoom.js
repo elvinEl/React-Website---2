@@ -49,7 +49,7 @@ function Zoom() {
   return (
     <div className="wrapper">
       {data.data.map((item, index) => (
-        <div key={index} className="wrapper-images">
+        <div key={index} className="wrapper-images certifcate-image">
           <img
             src={item.link}
             alt={item.text}

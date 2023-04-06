@@ -4,11 +4,10 @@ import { IoMdClose } from "react-icons/io";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 
 // Translation
-import { useTranslation } from "react-i18next";
+import { getI18n, useTranslation } from "react-i18next";
 
 function Header() {
   const { t, i18n } = useTranslation();
-
   const changeSelect = (option) => {
     i18n.changeLanguage(option.target.value);
   };
@@ -58,6 +57,7 @@ function Header() {
                 to="connect"
               >
                 {t("Bizimlə Əlaqə")}
+            
               </NavLink>
             </ul>
             <button
@@ -66,10 +66,14 @@ function Header() {
             >
               {mobile ? <IoMdClose /> : <AiOutlineAlignLeft />}
             </button>
-            <select className="select-option" onChange={changeSelect}>
-              <option value="az">Az</option>
-              <option value="ru">Ru</option>
-            </select>
+            
+            
+            <select value={i18n.language} className="select-option" onChange={changeSelect}>
+            <option value="az">Az</option>
+          <option value="ru">Ru</option>
+          </select>
+
+          
           </nav>
         </div>
       </div>

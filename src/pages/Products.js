@@ -18,7 +18,7 @@ function Products() {
           
         </span>
 
-        <div className="max-w-[95%] mx-auto">
+        <div className="max-w-[97%] mx-auto">
           <div className="bg-white mt-8 mb-8 py-[16px] border rounded-[20px]"></div>
           <NewProducts />
         </div>

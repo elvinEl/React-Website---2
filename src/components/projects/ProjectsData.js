@@ -23,7 +23,7 @@ function ProjectsData() {
   }, [i18n.language]);
 
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-2 max-md:grid-cols-1">
       {Object.keys(projects).map((key) => (
         <div
           key={projects[key].id}
