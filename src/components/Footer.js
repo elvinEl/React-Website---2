@@ -33,7 +33,7 @@ const { t, i18n } = useTranslation();
                     target="_blank"
                     href="https://www.instagram.com/rm.technic/?igshid=YmMyMTA2M2Y%3D"
                   >
-                    <span className="text-[15px] text-yellow-500">
+                    <span className="text-[20px] text-yellow-500">
                       <BsInstagram />
                     </span>
                   </a>
@@ -43,7 +43,7 @@ const { t, i18n } = useTranslation();
                     target="_blank"
                     href="https://www.facebook.com/people/RM-Technic/pfbid02eGq1W6hWQHK2rQq3vTMncbNP2Ph2BELxXebsaZHKk7Tucy9xavfanfy9f7qeWKAel/?mibextid=LQQJ4d"
                   >
-                    <span className="text-[15px] text-yellow-500">
+                    <span className="text-[20px] text-yellow-500">
                       <BsFacebook />
                     </span>
                   </a>
@@ -70,8 +70,8 @@ const { t, i18n } = useTranslation();
                   </p>
                 </div>
 
-                <p className="text-white text-[12px] mt-[1rem]">
-                  3 İsmayıl Qutqaşınlı, Bakı
+                <p className="text-[#ffffff7a] duration-1000 underline hover:no-underline text-[13px] mt-[1rem]  hover:text-white">
+             {t('Xırdalan şəhəri, Heydər Əliyev pr. 167 AAAF Park yaşayış massivi küçə 22 bina 11')}   
                 </p>
               </div>
             </div>

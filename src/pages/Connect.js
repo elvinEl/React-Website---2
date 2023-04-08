@@ -23,7 +23,7 @@ function Connect() {
         </div>
 
         <div className="grid grid-cols-10 max-w-[95%]  mx-auto mt-16 mb-12 max-lg:block  ">
-          <div className="col-span-4 bg-[#4d4c4b] text-white p-8 rounded-l-xl rounded max-h-[380px] max-lg:rounded">
+          <div className="col-span-4 bg-[#4d4c4b] text-white p-8 rounded-l-xl rounded max-h-[400px] max-lg:rounded">
             <div>
               <span className="font-semibold text-[22px]">{t('Əlaqə Nömrələri')} </span>
               <div className="text-white mt-4">
@@ -38,8 +38,8 @@ function Connect() {
 
             <div className="mt-4">
               <span className="font-semibold text-[22px]">{t('E-mail')} </span>
-              <div className="mt-2">
-                <a href="mailto:raminmemmedzade@climat.az">raminmemmedzade@climat.az</a><br/>
+              <div>
+                <a href="mailto:raminmemmedzade@climat.az">huseynmammedzade@climat.az</a><br/>
                 <a href="mailto:hr@climat.az">hr@climat.az</a><br/>
                 <a href="mailto:info@climat.az">info@climat.az</a>
               </div>
@@ -48,7 +48,7 @@ function Connect() {
             <div className="mt-4" >
               <span className="font-semibold text-[22px]">{t('Ünvan')} </span>
               <div className="mt-2">
-                <span>507-511 İsmayıl bəy Qutqaşınlı, Bakı</span>
+                <span>{t('Xırdalan şəhəri, Heydər Əliyev pr. 167 AAAF Park yaşayış massivi küçə 22 bina 11')} </span>
               </div>
             </div>
           </div>
@@ -68,10 +68,9 @@ function Connect() {
 
           </div>
         </div>
-
         <div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12159.336398383248!2d49.82100290986404!3d40.36820277564172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc5db2da509%3A0x8cc1c152888dcd4b!2z0JDQu9GC0LXRgSDQn9C70LDQt9Cw!5e0!3m2!1sru!2saz!4v1679318611005!5m2!1sru!2saz"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1276.3406959257925!2d49.72401814003208!3d40.46050952040964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403085b0879d8753%3A0xbddd4c18bf1c06d7!2z0JDQkNCQ0KQg0J_QsNGA0Lo!5e0!3m2!1sru!2saz!4v1680878590804!5m2!1sru!2saz"
             width="100%"
             height="450"
             style={{ border: "0" }}

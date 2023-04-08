@@ -17,6 +17,9 @@ import Connect from "./pages/Connect";
 import RootLayout from "./layouts/RootLayout";
 import NewProductsDetails from "./components/products/NewProductsDetails";
 import ProductsLayout from "./layouts/ProductsLayout";
+import CategoryDetails from "./components/categories/CategoryDetails";
+import CategoryLayout from "./layouts/CategoryLayout";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +29,9 @@ const router = createBrowserRouter(
       <Route path="products" element={<ProductsLayout />}>
         <Route index element={<Products />} />
         <Route path=":id" element={<NewProductsDetails />} />
+      </Route>
+      <Route path="categories" element={<CategoryLayout />}>
+        <Route path=":id" element={<CategoryDetails />} />
       </Route>
       <Route path="projects" element={<Projects />} />
       <Route path="connect" element={<Connect />} />

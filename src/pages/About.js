@@ -34,22 +34,14 @@ function About() {
 
           <div className="bg-white p-[40px] border-l-4 border-yellow-300 text-start rounded font-light">
             <span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum
+              {t('RM TECHNIC (Professional Engineering Solutions) - Şirkətimiz Mərkəzi Havalandırma, İsitmə və Soyutma, Qazanxana, Nasosxana,Buxarlı isitmə və soyutma, Su-Kanalizasiya, Tüstüsovurma, SuluYanğınsöndürmə (Spirkler) Sistemləri, Yüksək və alçaq gərginliklielektrik sistemləri, Yanğın xəbərdarlıq sistemləri və Avtomatik idarəetmə sistemlərinin layihələndirilməsi, montajı və servisi üzrə ixtisaslaşmışdır. Bu gün də şirkətimiz göstərdiyi xidmət sahələrini genişləndirir və daim inkişaf edərək fəaliyyətini davam etdirir. Yarandığı dövrdən etibarən daim böyük layihələrə imza atmış  RM TECHNIC MMC nin komanda və işçi qrupları öz sahələri üzrə yüksək ixtisaslaşmış və 10 ildən çox təcrübəyə malik mütəxəssislərdən ibarətdir. Bununla yanaşı, şirkətimizin nümayəndələri öz fəaliyyəti dövründə keçirilən beynəlxalq və yerli təlimlərdə iştirak edib ən son texnogiyalarla və yeniliklərlə tanış olur, onları mövcud və gələcək işlərində tətbiq edirlər. RM TECHNIC MMC olaraq əsas iş prinsipimiz hər bir müştəriyə fərdi yanaşma və sifarişi müştərinin istəklərini nəzərə almaqla onun büdcəsinə maksimum qənaətlə hazılayıb verməkdir.')}
+              
             </span>
           </div>
           <br />
           <br />
 
-          <div >
+          <div>
             <span className="flex justify-center items-center font-bold text-[30px]">
               {t("XİDMƏTLƏR")}{" "}
             </span>

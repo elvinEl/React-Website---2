@@ -57,10 +57,10 @@ function Home() {
                       src={homeProducts[key].image}
                       alt=""
                     />
-                    <span className="mt-[2rem] font-bold text-red-700">
+                    <span className="mt-[2rem] font-bold text-[#3abff8]">
                       {homeProducts[key].title}
                     </span>
-                    <p className="absolute -bottom-3 bg-[#bb0000] hover:bg-[#a40404] transition-colors text-white px-14 py-1 font-semibold text-[12px] rounded">
+                    <p className="absolute -bottom-3 bg-[#3abff8] hover:bg-[#089ddd] transition-colors text-white px-14 py-1 font-semibold text-[12px] rounded">
                       {t("Ətraflı")}
                     </p>
                   </div>
