@@ -13,7 +13,7 @@ function Categories() {
     async function fetchProducts() {
       const language = i18n.language;
       const response = await axios.get(
-        "http://192.168.0.130:8000/api/categories",
+        "http://192.168.31.32:8010/api/categories",
         {
           headers: { "Accept-Language": language },
         }
@@ -27,7 +27,7 @@ function Categories() {
   return (
     <div >
       
-      <div className="grid cursor-pointer grid-cols-5 gap-4 max-xl:grid-cols-3  max-xl:w-full max-lg:grid-cols-2 max-md:grid-cols-1">
+      <div className="grid cursor-pointer grid-cols-6 gap-4 max-xl:grid-cols-3  max-xl:w-full max-lg:grid-cols-2 max-md:grid-cols-1">
         {Object.keys(categories).map((key) => (
           <div className="bg-white flex justify-center items-center text-center hover:shadow-lg duration-500 shadow-xl " >
             <Link to={`categories/${categories[key].id}`}>

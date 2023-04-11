@@ -18,11 +18,11 @@ function NewProductsDetails() {
   //     .then((data) => setProduct(data.data));
   // }, []);
 
-
+  http://192.168.31.32:8080/
   useEffect(() => {
     async function fetchProducts() {
         const language = i18n.language;
-        const response = await axios.get('http://192.168.0.130:8000/api/products/'+id, {
+        const response = await axios.get('http://192.168.31.32:8010/api/products/'+id, {
           headers: { 'Accept-Language': language },
         });
         setProductDetails(response.data.data);

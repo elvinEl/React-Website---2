@@ -30,7 +30,7 @@ function NewProducts() {
   useEffect(() => {
     async function fetchProducts() {
         const language = i18n.language;
-        const response = await axios.get('http://192.168.0.130:8000/api/products', {
+        const response = await axios.get('http://192.168.31.32:8010/api/products', {
           headers: { 'Accept-Language': language },
         });
         setProducts(response.data.data);
@@ -47,7 +47,7 @@ function NewProducts() {
             <span className="font-bold text-2xl mt-8">YENI MƏHSULLAR</span>
           ) : null}
         </div>
-        <div className=" grid grid-cols-4 cursor-pointer gap-6 mt-8 max-w-[95%] mx-auto max-xl:grid-cols-3  max-lg:grid-cols-2 max-lg:max-w-[90%] max-md:grid-cols-1 max-md:max-w-[90%]">
+        <div className="grid grid-cols-4 cursor-pointer gap-6 mt-8 max-w-[95%] mx-auto max-xl:grid-cols-3  max-lg:grid-cols-2 max-lg:max-w-[90%] max-md:grid-cols-1 max-md:max-w-[90%]">
           {Object.keys(slice).map((key) => (
             <Link to={products[key].id}>
               <NewProductItem key={key} product={products[key]} />

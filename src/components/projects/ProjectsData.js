@@ -12,7 +12,7 @@ function ProjectsData() {
     async function fetchProducts() {
       const language = i18n.language;
       const response = await axios.get(
-        "http://192.168.0.130:8000/api/projects",
+        "http://192.168.31.32:8010/api/projects",
         {
           headers: { "Accept-Language": language },
         }

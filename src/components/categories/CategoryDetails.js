@@ -14,7 +14,7 @@ function CategoryDetails() {
   useEffect(() => {
     async function fetchProducts() {
         const language = i18n.language;
-        const response = await axios.get('http://192.168.0.130:8000/api/categories/'+id, {
+        const response = await axios.get('http://192.168.31.32:8010/api/categories/'+id, {
           headers: { 'Accept-Language': language },
         });
         setCategoryDetails(response.data.data);

@@ -16,6 +16,10 @@
         "img":"../assets/partners/t4.jpg"
     },
     {
+        "id":9,
+        "img":"../assets/partners/t9.jpg"
+    },
+    {
         "id":5,
         "img":"../assets/partners/t5.jpg"
     },
@@ -24,17 +28,14 @@
         "img":"../assets/partners/t6.jpg"
     },
     {
+        "id":8,
+        "img":"../assets/partners/m1.jpg"
+    },
+    {
         "id":7,
         "img":"../assets/partners/t15.jpg"
     },
-    {
-        "id":8,
-        "img":"../assets/partners/t8.jpg"
-    },
-    {
-        "id":9,
-        "img":"../assets/partners/t9.jpg"
-    },
+
     {
         "id":10,
         "img":"../assets/partners/t18.jpg"
