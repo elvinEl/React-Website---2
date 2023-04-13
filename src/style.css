@@ -15,7 +15,7 @@ html {
 .mobile-menu-icon {
   display: none;
 }
-.navbar{
+.navbar {
   max-width: 100% !important;
   justify-content: end;
 }
@@ -182,46 +182,57 @@ button > .after {
 /* SCROLLBAR FINSH */
 
 .scroll-to-top {
-  background-color: rgba(53, 113, 255, 50%);
-  right: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  height: 55px;
-  width: 55px;
+  background-color: rgba(53, 113, 255, 50%) !important;
+  right: 22px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 50% !important;
+  height: 55px !important;
+  width: 55px !important;
 }
 .scroll-to-top:hover {
-  background-color: rgba(53, 113, 255, 1);
+  background-color: rgba(53, 113, 255, 1) !important;
   transition: 500ms;
 }
 
-
-
 /* BreadCrumbs */
-.breadcrums{
+.breadcrums {
   max-width: 1333px;
   margin: 0 auto;
   margin-top: 10rem;
   margin-bottom: 0.5rem;
-}  
-  .breadcrums > *{
+}
+.breadcrums > * {
   display: inline-block;
   margin-right: 10px;
 }
-.breadcrums .crumb:after{
-  content: '>';
+.breadcrums .crumb:after {
+  content: ">";
   margin-left: 10px;
 }
-.breadcrums .crumb:last-child::after{
+.breadcrums .crumb:last-child::after {
   display: none;
 }
-.breadcrums .crumb a{
-  color:black;
+.breadcrums .crumb a {
+  color: black;
 }
-.breadcrums .crumb a:hover{
+.breadcrums .crumb a:hover {
   text-decoration: underline;
 }
-.select-option{
+.select-option {
   outline: none !important;
+  color: black;
+  background-color: transparent;
+}
+
+.navbar1 {
+  z-index: 99px;
+  width: 100%;
+  background-color: rgba(119, 119, 119, 0.5);
+  color: white;
+  top: 0;
+}
+.navbar-active {
+  background-color: rgba(119, 119, 119, 0.8);
 }

@@ -6,6 +6,7 @@ import ProjectsImagesZoom from "../components/projects/ProjectsImagesZoom";
 import Helmet from "react-helmet";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
+import CounterUpPage from "../components/counter/CounterUpPage";
 
 function Home() {
 
@@ -47,7 +48,7 @@ function Home() {
           <div className=" grid grid-cols-4 cursor-pointer gap-6 mt-8 max-w-[80%] max-xl:grid-cols-3 max-xl:max-w-[80%] mx-auto max-lg:grid-cols-2 max-lg:max-w-[90%] max-md:grid-cols-1 max-md:max-w-[90%]">
             {Object.keys(slice).map((key) => (
               <Link
-                className=""
+               
                 to={`products/${homeProducts[key].id.toString()}`}
               >
                 <div className="box p-[35px 25px 25px]  py-[25px] bg-white relative shadow ">
@@ -79,6 +80,8 @@ function Home() {
           </div>
         </div>
       </div>
+
+        <CounterUpPage/>
 
       <ProjectsImagesZoom />
 

@@ -103,3 +103,14 @@ code {
   height: 450px;
 }
 }
+
+
+/* STATİSTİC */
+.fixed-img{
+  background-image: url('/public/assets/hero-img/section.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-attachment: fixed;
+ background-position: center;
+ min-height: 400px;
+}

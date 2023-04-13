@@ -7,6 +7,18 @@ import { AiOutlineAlignLeft } from "react-icons/ai";
 import { getI18n, useTranslation } from "react-i18next";
 
 function Header() {
+
+  const [navbar,setNavbar] = useState(false )
+
+  const changeBackground = () =>{
+   if(window.scrollY >= 120){
+    setNavbar(true)
+   }else{
+    setNavbar(false)
+   }
+  }
+  window.addEventListener('scroll',changeBackground)
+
   const { t, i18n } = useTranslation();
   const changeSelect = (option) => {
     i18n.changeLanguage(option.target.value);
@@ -14,8 +26,9 @@ function Header() {
 
   const [mobile, setMobile] = useState(false);
   return (
-    <header className="mb-[6rem]">
-      <div className="bg-white shadow-2xl fixed w-full top-0 z-50">
+    <header className="mb-[6rem] fixed top-0 z-[99] w-full text-white">
+     
+      <div  className={navbar ? 'navbar-active' : 'navbar1'}>
         <div className="max-w-[80%] flex mx-auto justify-between h-[6rem] items-center">
           <div className="max-w-[85px] max-lg:max-w-[80px] max-md:max-w-[75px]">
             <a href="/">
@@ -23,7 +36,7 @@ function Header() {
             </a>
           </div>
 
-          <nav className="navbar ">
+          <nav className="flex ">
             <ul
               className={mobile ? "nav-links-mobile" : "nav-links"}
               onClick={() => setMobile(false)}
