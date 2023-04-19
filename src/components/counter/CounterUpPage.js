@@ -23,7 +23,7 @@ function CounterUpPage() {
           </div>
 
           <div className="grid grid-cols-3 mt-16 mb-16 text-white max-lg:flex max-lg:flex-col max-lg:pb-10 max-lg:m-0">
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center max-lg:mb-4">
               <div className="flex text-[50px] max-lg:text-[30px]">
                 {counterStart && (
                   <CountUp start={0} end={160} duration={2} delay={0} />
@@ -33,7 +33,7 @@ function CounterUpPage() {
               <p className="text-[18px]">{t("Tamamlanmış Lahiyələr")} </p>
             </div>
 
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center max-lg:mb-4">
               <div className="flex text-[50px] max-lg:text-[30px]">
                 {counterStart && (
                   <CountUp start={0} end={150} duration={2} delay={0} />
@@ -43,7 +43,7 @@ function CounterUpPage() {
               <p className="text-[18px]">{t("Razı Qalan Müştəri")} </p>
             </div>
 
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center max-lg:mb-4">
               <div className="flex text-[50px] max-lg:text-[30px]">
                 {counterStart && (
                   <CountUp start={0} end={15} duration={2} delay={0} />

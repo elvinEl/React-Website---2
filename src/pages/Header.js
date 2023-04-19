@@ -8,6 +8,7 @@ import { getI18n, useTranslation } from "react-i18next";
 
 function Header() {
 
+  // Scroll
   const [navbar,setNavbar] = useState(false )
 
   const changeBackground = () =>{
@@ -18,12 +19,14 @@ function Header() {
    }
   }
   window.addEventListener('scroll',changeBackground)
+// 
 
   const { t, i18n } = useTranslation();
   const changeSelect = (option) => {
     i18n.changeLanguage(option.target.value);
   };
 
+  // Responsive Mobile Menu state
   const [mobile, setMobile] = useState(false);
   return (
     <header className="mb-[6rem] fixed top-0 z-[99] w-full text-white">
