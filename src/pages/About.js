@@ -18,7 +18,7 @@ function About() {
 
       <div className="max-w-[70%] mt-40 mx-auto bg-[#f7f7f7] border rounded max-lg:max-w-full max-lg:mt-0">
         <span className="text-[30px] font-bold flex justify-center items-center pt-6 ">
-          {t("Şirkət Haqqında")}
+          {t("Haqqımızda")}
         </span>
 
         <div className="max-w-[95%] mx-auto">
@@ -96,49 +96,28 @@ function About() {
             </span>
             <div className="grid grid-cols-3 gap-4 max-md:grid-cols-1">
               <div>
-                <div className="flex justify-center items-center text-[40px] mt-3">
+                <div className="flex justify-center items-center text-[75px] mt-3">
                   <BsFillBuildingFill />
                 </div>
-                <span className="flex justify-center items-center font-black mt-3 mb-3">
+                <span className="flex justify-center items-center font-black mt-3 mb-3 text-[22px]">
                   {t("İLLƏRİN TƏCRÜBƏSİ")}
-                </span>
-                <p className="font-light">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
+                </span>         
               </div>
               <div>
-                <div className="flex justify-center items-center text-[40px] mt-3">
+                <div className="flex justify-center items-center text-[75px] mt-3">
                   <FaHandshake />
                 </div>
-                <span className="flex justify-center items-center font-black mt-3 mb-3">
+                <span className="flex justify-center items-center font-black mt-3 mb-3 text-[22px]">
                   {t("MÜŞTƏRİLƏRİN ETİBARI")}
                 </span>
-                <p className="font-light">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.{" "}
-                </p>
               </div>
               <div>
-                <div className="flex justify-center items-center text-[40px] mt-3">
+                <div className="flex justify-center items-center text-[75px] mt-3">
                   <ImCheckmark />
                 </div>
-                <span className="flex justify-center items-center font-black mt-3 mb-3">
+                <span className="flex justify-center items-center font-black mt-3 mb-3 text-[22px]">
                   {t("SƏRFƏLİ QİYMƏT")}
                 </span>
-                <p className="font-light">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
               </div>
             </div>
           </div>

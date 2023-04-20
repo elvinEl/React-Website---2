@@ -45,31 +45,31 @@ function Header() {
               onClick={() => setMobile(false)}
             >
               <NavLink
-                className='relative no-underline after:content-[""] after:absolute after:bg-blue-500 after:h-[3px] after:w-0 after:duration-300 after:left-0 after:bottom-0 after:hover:w-full     font-bold text-sm hover:text-gray-500 transition-all px-[10px] py-[20px]'
+                className='relative no-underline after:content-[""] after:absolute after:bg-blue-500 after:h-[3px] after:w-0 after:duration-300 after:left-0 after:bottom-0 after:hover:w-full     font-bold text-sm hover:text-gray-500 transition-all px-[10px] py-[20px] max-md:text-[24px]'
                 to="/"
               >
                 {t("Əsas_Səhifə")}
               </NavLink>
               <NavLink
-                className='relative no-underline after:content-[""] after:absolute after:bg-blue-500 after:h-[3px] after:w-0 after:duration-300 after:left-0 after:bottom-0 after:hover:w-full  font-bold text-sm hover:text-gray-500 transition-all px-[10px] py-[20px]'
+                className='relative no-underline after:content-[""] after:absolute after:bg-blue-500 after:h-[3px] after:w-0 after:duration-300 after:left-0 after:bottom-0 after:hover:w-full  font-bold text-sm hover:text-gray-500 transition-all px-[10px] py-[20px] max-md:text-[24px]'
                 to="about"
               >
                 {t("Haqqımızda")}
               </NavLink>
               <NavLink
-                className='relative no-underline after:content-[""] after:absolute after:bg-blue-500 after:h-[3px] after:w-0 after:duration-300 after:left-0 after:bottom-0 after:hover:w-full  font-bold text-sm hover:text-gray-500 transition-all px-[10px] py-[20px]'
+                className='relative no-underline after:content-[""] after:absolute after:bg-blue-500 after:h-[3px] after:w-0 after:duration-300 after:left-0 after:bottom-0 after:hover:w-full  font-bold text-sm hover:text-gray-500 transition-all px-[10px] py-[20px] max-md:text-[24px]'
                 to="products"
               >
                 {t("Məhsullar")}
               </NavLink>
               <NavLink
-                className='relative no-underline after:content-[""] after:absolute after:bg-blue-500 after:h-[3px] after:w-0 after:duration-300 after:left-0 after:bottom-0 after:hover:w-full  font-bold text-sm hover:text-gray-500 transition-all px-[10px] py-[20px]'
+                className='relative no-underline after:content-[""] after:absolute after:bg-blue-500 after:h-[3px] after:w-0 after:duration-300 after:left-0 after:bottom-0 after:hover:w-full  font-bold text-sm hover:text-gray-500 transition-all px-[10px] py-[20px] max-md:text-[24px]'
                 to="projects"
               >
                 {t("Layihələr")}
               </NavLink>
               <NavLink
-                className='relative no-underline after:content-[""] after:absolute after:bg-blue-500 after:h-[3px] after:w-0 after:duration-300 after:left-0 after:bottom-0 after:hover:w-full  font-bold text-sm hover:text-gray-500 transition-all px-[10px] py-[20px]'
+                className='relative no-underline after:content-[""] after:absolute after:bg-blue-500 after:h-[3px] after:w-0 after:duration-300 after:left-0 after:bottom-0 after:hover:w-full  font-bold text-sm hover:text-gray-500 transition-all px-[10px] py-[20px] max-md:text-[24px]'
                 to="connect"
               >
                 {t("Bizimlə Əlaqə")}
