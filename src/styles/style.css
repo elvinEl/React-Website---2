@@ -239,3 +239,13 @@ button > .after {
   padding: 5px 0;
   transition: 500ms ease-in-out;
 }
+
+
+.light{
+  background-color: white;
+  color: black;
+}
+.dark{
+  background-color: black;
+  color: white;
+}
